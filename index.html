@@ -30,7 +30,7 @@
         </div>
     </header>
 
-    <!--  Aca esta el main --> 
+    <!--  I M A G E N    Y     T E X T O --> 
     <main id="fondo-home">
         <div class="box">
         <div class="padre">
@@ -43,9 +43,108 @@
         </div>
     
 
-    <!--  Aca esta el       A S I D E    --> 
-    <aside>
-        <h3>IMAGEN</h3>
+    <!--  Aca esta el  A S I D E  imagen  --> 
+ <!--   <aside>
+       <p class="title-form">IMAGEN</p>
+        <form>
+
+        <div class="formulario-imagen">
+            
+                <label for="url">URL</label>
+                <input type="text" id="url" name="url">
+                <label for="fondo" >FONDO</label><br>
+                <div class="alinear-inputs">
+                <input type="color" name="color" id="color">
+                <select name="opcion-color" id="opcion-color">
+                    <option value="ninguno">Ninguno</option>
+                    <option value="aclarar">Aclarar</option>
+                    <option value="oscurecer">Oscurecer</option>
+                    <option value="diferencia">Diferencia</option>
+                    <option value="luminosidad">Luminosidad</option>
+                    <option value="multiplicar">Multiplicar</option>
+                </select><br>
+                </div>
+
+                <label for="">FILTROS</label><br>
+                <div class="all-filter">
+                <label for="brillo">BRILLO</label><br>
+                <input type="range" id="brillo" name="brillo" min="0" max="1" class="slider"><br>
+                
+                <label for="opacidad">OPACIDAD</label>
+                <input type="range" id="opacidad" name="opacidad" min="0" max="1" class="slider"><br>
+
+                <label for="contraste">CONTRASTE</label>
+                <input type="range" id="contraste" name="contraste" min="100" max="1000" class="slider"><br>
+
+                <label for="desenfoque">DESENFOQUE</label>
+                <input type="range" id="desenfoque" name="desenfoque" min="0" max="10" class="slider"><br>
+
+                <label for="grises">ESCALA DE GRISES</label>
+                <input type="range" id="grises" name="grises" min="0" max="100" class="slider"><br>
+
+                <label for="sepia">SEPIA</label><br>
+                <input type="range" id="sepia" name="sepia" min="0" max="100" class="slider"><br>
+
+                <label for="hue">HUE</label><br>
+                <input type="range" id="hue" name="hue" min="0" max="359" class="slider">
+
+                <label for="saturado">SATURADO</label>
+                <input type="range" id="saturado" name="saturado" min="100" max="1000" class="slider">
+
+                <label for="negativo">NEGATIVO</label>
+                <input type="range" id="negativo" name="brillo" min="0" max="1" class="slider">
+                </div>    
+                <button id="reestablecer-filtros">Reestablecer filtros</button>
+            
+        </form>
+    </div>
+                   -->
+
+        <!--  Aca esta el  A S I D E   texto   --> 
+        <aside>
+            <p class="title-form">TEXTO</p>
+             <form>
+     
+             <div class="formulario-imagen">
+                 
+                     <label for="text-superior">SUPERIOR</label>
+                     <textarea name="text-superior" id="text-superior" cols="25" rows="1">TOP TEXT</textarea><br>
+
+                     <input type="checkbox" name="" id=""> Sin texto superior <br>
+
+                     <label for="text-inferior">INFERIOR</label>
+                     <textarea name="text-inferior" id="text-inferior" cols="25" rows="1">BOTTOM TEXT</textarea><br>
+                     <input type="checkbox" name="" id=""> Sin texto inferior <br>
+
+                     <label for="fuente">FUENTE</label> <br>
+                     <select name="fuente" id="fuente">
+                        <option value="impact">Impact</option>
+                        <option value="arial">Arial</option>
+                        <option value="arial-black">Arial Black</option>
+                        <option value="american-typewriter">American Typewriter</option>
+                        <option value="andale-mono">Andale Mono</option>
+                        <option value="comic-sans">Comic Sans MS</option>
+                        <option value="helvetica">Helvetica</option>
+                        <option value="impact">Impact</option>
+                        <option value="verdana">Verdana</option>
+                        <option value="times">Times New Roman</option>
+
+                        <div>
+                        <input type="number" id="size-letra" name="size-letra"min="12" max="300">
+                        <button class="btn-text"><i class="fa-solid fa-align-left"></i></button>
+                        <button class="btn-text"><i class="fa-solid fa-align-center"></i></button>
+                        <button class="btn-text"><i class="fa-solid fa-align-right"></i></button>  
+                        </div>
+                     </select>
+            </div>
+     
+
+                 
+             </form>
+         </div>
+
+
+
     </aside>
 
     </main>
