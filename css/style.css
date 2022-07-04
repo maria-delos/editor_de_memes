@@ -48,6 +48,7 @@
     background-color: #424549;
     width: 85%;
     height: 84.2vh; 
+
  /*   height: 100%; */
    /* top: 0%;  */
     
@@ -123,9 +124,12 @@ aside{
     background-color: #646464;
     border-radius: 3px;
     border: none;
-    padding-top: 6%;
+    padding: 3.7%;
     margin-top:  5%;
     margin-bottom: 8%; 
+    color: #fff;
+    font-size: 1.1em;
+    width: 100%;
 }
 
 .alinear-inputs{
@@ -134,6 +138,10 @@ aside{
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+input[type="range"] {       /*  cambiando el range */
+    accent-color: #fff;
+  }
 
 .all-filter{
     margin-top: 7%;
@@ -164,6 +172,7 @@ aside{
     background-color: #646464;
     border: none;
     border-radius: 3px;
+    color: #fff;
 }
 
 #reestablecer-filtros{
@@ -172,6 +181,7 @@ aside{
     padding: 4%;
     font-size: 1.1em;
     background-color: #646464;
+    color: #fff;
 }
 
 
@@ -199,7 +209,7 @@ textarea{
 
 #size-letra{
     width: 50%;
-    background-color: #424549;
+    background-color: #646464;
     color: #fff;
     border-radius: 3px;
     border: none;
@@ -214,4 +224,59 @@ textarea{
     border: none;
     margin-inline: 1%;
     padding: 3%;
+} 
+                                       /* estilo seleccion de color*/
+#color-texto{
+    appearance: none;
+    width: 26%;
+    background-color: transparent;
+    border: none;
+}
+#color-texto::-webkit-color-swatch{
+    border-radius: 50%;
+    border: none;
+}
+
+#texto-color{           /* texto dentro de color*/
+    font-size: 1.1em;   
+}
+
+#label-color{
+    margin-bottom: 14%;
+}
+
+.selector-color{
+    display: flex;
+    align-items: center;
+    background-color: #646464;
+    border-radius: 3px;
+    width: 94%;
+/*    border: 1px solid blue; */
+    
+}
+
+#input-color-fondo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+ /*   border: 1px solid yellow;  */
+    width: 70%;
+    align-content: space-between;
+}
+
+#input-color-todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 11%;
+}
+
+.btn-contorno{
+    border: none;
+    border-radius: 3px;
+    background-color: #646464;
+    color: #fff;
+    padding: 4% 3%;
+    font-size: 1.15em;
 }

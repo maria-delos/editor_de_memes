@@ -44,17 +44,17 @@
     
 
     <!--  Aca esta el  A S I D E  imagen  --> 
- <!--   <aside>
+<!--    <aside>
        <p class="title-form">IMAGEN</p>
         <form>
 
         <div class="formulario-imagen">
             
-                <label for="url">URL</label>
+                <label for="url">URL</label><br>
                 <input type="text" id="url" name="url">
                 <label for="fondo" >FONDO</label><br>
                 <div class="alinear-inputs">
-                <input type="color" name="color" id="color">
+                <input type="color" name="color" id="color">    revisar esta parte
                 <select name="opcion-color" id="opcion-color">
                     <option value="ninguno">Ninguno</option>
                     <option value="aclarar">Aclarar</option>
@@ -98,7 +98,7 @@
             
         </form>
     </div>
-                   -->
+                   --> 
 
         <!--  Aca esta el  A S I D E   texto   --> 
         <aside>
@@ -128,14 +128,52 @@
                         <option value="impact">Impact</option>
                         <option value="verdana">Verdana</option>
                         <option value="times">Times New Roman</option>
-
+                    </select>
                         <div>
                         <input type="number" id="size-letra" name="size-letra"min="12" max="300">
                         <button class="btn-text"><i class="fa-solid fa-align-left"></i></button>
                         <button class="btn-text"><i class="fa-solid fa-align-center"></i></button>
                         <button class="btn-text"><i class="fa-solid fa-align-right"></i></button>  
                         </div>
-                     </select>
+                        <div id="input-color-todo">
+                            
+                            <div  id="input-color-fondo">
+                            <label for="" id="label-color">COLOR</label> 
+                            <div class="selector-color">
+                            <input type="color" id="color-texto" value="#000000" aria-label="color del texto">
+                            <span id="texto-color">#000000</span>
+                            </div>
+                            </div>
+                            
+                            <div  id="input-color-fondo">
+                            <label for="">FONDO</label><br>
+                            <div class="selector-color">
+                            <input type="color" id="color-texto" value="#FFFFFF" aria-label="color del texto">
+                            <span id="texto-color">#FFFFFF</span>
+                            </div>
+                            </div>
+                        </div>
+                    <input type="checkbox" name="" id="">Fondo transparente <br>
+                    <label for="">CONTORNO</label>
+                    <div class="btns-contorno">
+                        <button class="btn-contorno">Ninguno</button>
+                        <button class="btn-contorno">Claro</button>
+                        <button class="btn-contorno">Oscuro</button>
+                    </div>
+                    <label for="">ESPACIADO</label>
+                    <input type="number">
+
+                    <label for="">INTERLINEADO</label><br>
+                    <select name="" id="">
+                        <option value="">0.8</option>
+                        <option value="">1</option>
+                        <option value="">1.2</option>
+                        <option value="">1.5</option>
+                        <option value="">2</option>
+                        <option value="">2.5</option>
+                    </select>
+
+
             </div>
      
 
