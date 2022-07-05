@@ -148,12 +148,16 @@ input[type="range"] {       /*  cambiando el range */
     margin-bottom: 8%;
 }
 
-#color{
+#icolor-imagen{
     width: 46%;
     margin-right: 6%;
+   
+    border: none; 
     background-color: #646464;
-    border: none;
+
 }
+
+
 
 .slider{
     width: 100%;
@@ -186,6 +190,10 @@ input[type="range"] {       /*  cambiando el range */
 
 
 /* /////////////// A S I D E   t e x t o   /////////////////*/
+
+.div-texto{
+    display: none;
+}
 
 textarea{
     background-color: #646464;
@@ -279,4 +287,13 @@ textarea{
     color: #fff;
     padding: 4% 3%;
     font-size: 1.15em;
+}
+
+
+.ocultar{
+    display: none;
+}
+
+.mostrar{
+    display: block;
 }

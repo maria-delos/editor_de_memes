@@ -20,10 +20,10 @@
         <a href="#" id="btn-imagen" class="btn-nav">
             <i class="fa-solid fa-file-image"></i>
             Imagen</a> 
-        <a href="#" id="btn-imagen" class="btn-nav"> 
+        <a href="#" id="btn-texto" class="btn-nav"> 
             <i class="fa-solid fa-font"></i>
             Texto</a>
-        <a href="#" id="btn-imagen" class="btn-nav">
+        <a href="#" id="btn-modo-oscuro" class="btn-nav">
             <i class="fa-regular fa-lightbulb"></i> 
             Modo oscuro</a>
         </div>
@@ -43,18 +43,18 @@
         </div>
     
 
-    <!--  Aca esta el  A S I D E  imagen  --> 
-<!--    <aside>
+    <!--  Aca esta el  A S I D E  imagen  --------------------------------------> 
+    <aside>
+        <div  class="div-imagen">
        <p class="title-form">IMAGEN</p>
         <form>
-
         <div class="formulario-imagen">
             
                 <label for="url">URL</label><br>
                 <input type="text" id="url" name="url">
                 <label for="fondo" >FONDO</label><br>
                 <div class="alinear-inputs">
-                <input type="color" name="color" id="color">    revisar esta parte
+                <input type="color" name="color" id="icolor-imagen" class="icolor-imagen">   
                 <select name="opcion-color" id="opcion-color">
                     <option value="ninguno">Ninguno</option>
                     <option value="aclarar">Aclarar</option>
@@ -68,7 +68,7 @@
                 <label for="">FILTROS</label><br>
                 <div class="all-filter">
                 <label for="brillo">BRILLO</label><br>
-                <input type="range" id="brillo" name="brillo" min="0" max="1" class="slider"><br>
+                <input type="range" id="brillo" name="brillo" min="0" max="1" step="1" value="1" class="slider"><br>
                 
                 <label for="opacidad">OPACIDAD</label>
                 <input type="range" id="opacidad" name="opacidad" min="0" max="1" class="slider"><br>
@@ -98,15 +98,14 @@
             
         </form>
     </div>
-                   --> 
+</div>                 
 
-        <!--  Aca esta el  A S I D E   texto   --> 
-        <aside>
+        <!--  Aca esta el  A S I D E   texto   -------------------------> 
+     <div class="div-texto" >
             <p class="title-form">TEXTO</p>
              <form>
      
              <div class="formulario-imagen">
-                 
                      <label for="text-superior">SUPERIOR</label>
                      <textarea name="text-superior" id="text-superior" cols="25" rows="1">TOP TEXT</textarea><br>
 
@@ -116,7 +115,7 @@
                      <textarea name="text-inferior" id="text-inferior" cols="25" rows="1">BOTTOM TEXT</textarea><br>
                      <input type="checkbox" name="" id=""> Sin texto inferior <br>
 
-                     <label for="fuente">FUENTE</label> <br>
+                     <label for="fuente">FUENTE</label> <br>   acomodar esto
                      <select name="fuente" id="fuente">
                         <option value="impact">Impact</option>
                         <option value="arial">Arial</option>
@@ -172,18 +171,10 @@
                         <option value="">2</option>
                         <option value="">2.5</option>
                     </select>
-
-
             </div>
-     
-
-                 
-             </form>
+                 </form>
          </div>
-
-
-
-    </aside>
+    </aside> 
 
     </main>
     <script src="javascript/editor_memes.js"></script>
