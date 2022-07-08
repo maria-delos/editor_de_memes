@@ -56,7 +56,7 @@
 
 
 
-/* /////////////// C O N T E N E D O R   /////////////////*/
+/* /////////////// C O N T E N E D O R    M E M E  /////////////////*/
 
 .padre{
     width: 40%;
@@ -148,16 +148,43 @@ input[type="range"] {       /*  cambiando el range */
     margin-bottom: 8%;
 }
 
-#icolor-imagen{
-    width: 46%;
-    margin-right: 6%;
-   
-    border: none; 
-    background-color: #646464;
 
+.selector-color-meme{
+    display: flex;
+    align-items: center;
+    background-color: #646464;
+    border-radius: 3px;
+    width: 48%;
+    color: #fff;
+    /* border: 1px solid yellow; */
+    justify-content: space-around;
+    
 }
 
+#input-color-meme{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    /* border: 1px solid yellow;   */
+    width: 100%;
+    align-content: space-between;
+}
 
+#opcion-color{
+    width: 48%;
+    font-size: 1.1em;
+    padding: 3.5%;
+    background-color: #646464;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    /* border: 1px solid greenyellow; */
+    margin-right: 0%;
+} 
+
+
+/*////////////////////////////////////////////*/
 
 .slider{
     width: 100%;
@@ -169,24 +196,20 @@ input[type="range"] {       /*  cambiando el range */
     margin-bottom: 5%;
 }
 
-#opcion-color{
-    width: 47%;
-    font-size: 1.1em;
-    padding: 3%;
-    background-color: #646464;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
-}
-
-#reestablecer-filtros{
+.reestablecer-filtros{
     border: none;
     border-radius: 3px;
     padding: 4%;
     font-size: 1.1em;
     background-color: #646464;
     color: #fff;
+    cursor: pointer;
 }
+
+.reestablecer-filtros:hover{
+    background-color: #999999;
+}
+
 
 
 /* /////////////// A S I D E   t e x t o   /////////////////*/
@@ -195,17 +218,24 @@ input[type="range"] {       /*  cambiando el range */
     display: none;
 }
 
+.checkbox{
+    width: 0.625em;
+    margin-bottom: 8%;
+}
+
 textarea{
     background-color: #646464;
     color: #fff;
     border-radius: 3px;
     border: none;
     font-size: 1em;
-    padding: 0.7em;
+    padding: 0.85em;
     resize: vertical;
+    margin-bottom: 3%;
+    margin-top: 4%;
 }
 
-#fuente{
+.itipografia{
     background-color: #646464;
     color: #fff;
     border-radius: 3px;
@@ -213,9 +243,11 @@ textarea{
     width: 100%;
     font-size: 1em;
     padding: 0.7em;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
-#size-letra{
+.itamanioletra{
     width: 50%;
     background-color: #646464;
     color: #fff;
@@ -234,50 +266,52 @@ textarea{
     padding: 3%;
 } 
                                        /* estilo seleccion de color*/
-#color-texto{
+.color-texto {
     appearance: none;
     width: 26%;
     background-color: transparent;
     border: none;
 }
-#color-texto::-webkit-color-swatch{
+.color-texto::-webkit-color-swatch{
     border-radius: 50%;
     border: none;
 }
 
-#texto-color{           /* texto dentro de color*/
+.texto-color{           /* texto dentro de color*/
     font-size: 1.1em;   
 }
 
 #label-color{
-    margin-bottom: 14%;
+    margin-bottom: 10%;
+   /* es aqui */
 }
 
 .selector-color{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #646464;
     border-radius: 3px;
     width: 94%;
-/*    border: 1px solid blue; */
-    
-}
+    margin-top: 0%;
+ }
 
 #input-color-fondo{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-direction: column;
- /*   border: 1px solid yellow;  */
+    flex-direction: column; 
     width: 70%;
     align-content: space-between;
 }
 
 #input-color-todo{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
-    margin-top: 11%;
+    margin-top: 9%; 
+    margin-bottom: 3.5%; 
+    width: 100%;
 }
 
 .btn-contorno{
@@ -287,8 +321,34 @@ textarea{
     color: #fff;
     padding: 4% 3%;
     font-size: 1.15em;
+    margin-top: 5%;
+    width: 32%;
+    margin-bottom: 8%;
 }
 
+.input-espaciado{
+    width: 100%;
+    background-color: #646464;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    padding: 0.9em;
+    font-size: 1em;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+.select-interlineado{
+    width: 100%;
+    background-color: #646464;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    padding: 0.9em;
+    font-size: 1em;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
 
 .ocultar{
     display: none;
@@ -296,4 +356,59 @@ textarea{
 
 .mostrar{
     display: block;
+}
+
+/*************** M O D O   O S C U R O *********************/
+/* .navegador{
+    background-color: #ffb245;
+    color: #323232;
+}
+
+.fondoMain{
+    background-color: #fff;
+}
+
+.fondoAside{
+    background-color: #999999;
+}
+
+.m-claro{
+    background-color: #fff;
+    color: aqua;
+} */
+
+.dark .encabezado{
+    background-color: #c0e2dd;
+    color: #000080
+} 
+/* solucionar aca*/
+.dark #fondo-home{
+    background-color: #4ab3cd;
+}
+
+.dark .btn-nav{
+    background-color: #a5d6e4;
+    color: #000080;
+}
+
+.dark .btn-nav:hover{
+    background-color: #fff;
+}
+
+.dark aside{
+    background-color: #66cdaa;
+    color: #000080;
+}
+
+.dark .iclaro {
+    background-color: #fff;
+}
+
+.dark .itipografia, .itamanioletra{
+    background-color: #fff;
+    color: #03989e;
+}
+
+.dark label{
+    color: #000080;
 }
