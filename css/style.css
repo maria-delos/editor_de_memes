@@ -30,7 +30,7 @@
 .btn-nav{
     color: #fff;
     text-decoration: none;
-    background-color: #323232;
+    background-color: #424549;
     border-radius: 3px;
     padding: 6px 5px;
     display: inline-block;
@@ -74,23 +74,24 @@
     margin-top: 1%;
 }
 
-#top-text{
-    background-color: #fff;
-    height: 15%;
+.texto-top , .text-bottom{
+    background-color: #ffffff;
+    padding: 6%;
     width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
 }
 
-#cont-imagen{
+.contenedor-meme{
     background-color: black;
     width: 100%;
     height: 70%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
-#bottom-text{
-    background-color: #fff;
-    height: 15%;
-    width: 100%;
-}
 
 /* /////////////// A S I D E       I M A G E N   /////////////////*/
 
@@ -120,14 +121,14 @@ aside{
     color: #fff;
 }
 
-#url{
+.url{
     background-color: #646464;
     border-radius: 3px;
     border: none;
     padding: 3.7%;
     margin-top:  5%;
     margin-bottom: 8%; 
-    color: #fff;
+    color: #ffffff;
     font-size: 1.1em;
     width: 100%;
 }
@@ -140,7 +141,8 @@ aside{
 }
 
 input[type="range"] {       /*  cambiando el range */
-    accent-color: #fff;
+    accent-color: #ffffff;
+    cursor: pointer;
   }
 
 .all-filter{
@@ -155,9 +157,10 @@ input[type="range"] {       /*  cambiando el range */
     background-color: #646464;
     border-radius: 3px;
     width: 48%;
-    color: #fff;
-    /* border: 1px solid yellow; */
+    color: #ffffff;
+    /* border: 1px solid yellow;   */
     justify-content: space-around;
+    cursor: pointer;
     
 }
 
@@ -166,12 +169,12 @@ input[type="range"] {       /*  cambiando el range */
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: row;
-    /* border: 1px solid yellow;   */
+    /* border: 1px solid yellow;    */
     width: 100%;
     align-content: space-between;
 }
 
-#opcion-color{
+.s-color{
     width: 48%;
     font-size: 1.1em;
     padding: 3.5%;
@@ -179,7 +182,7 @@ input[type="range"] {       /*  cambiando el range */
     border: none;
     border-radius: 3px;
     color: #fff;
-    /* border: 1px solid greenyellow; */
+    /* border: 1px solid magenta;  */
     margin-right: 0%;
 } 
 
@@ -221,6 +224,8 @@ input[type="range"] {       /*  cambiando el range */
 .checkbox{
     width: 0.625em;
     margin-bottom: 8%;
+    border: none;
+
 }
 
 textarea{
@@ -265,12 +270,13 @@ textarea{
     margin-inline: 1%;
     padding: 3%;
 } 
-                                       /* estilo seleccion de color*/
+                    /* circulito estilo seleccion de color*/
 .color-texto {
     appearance: none;
     width: 26%;
     background-color: transparent;
     border: none;
+    
 }
 .color-texto::-webkit-color-swatch{
     border-radius: 50%;
@@ -305,7 +311,7 @@ textarea{
     align-content: space-between;
 }
 
-#input-color-todo{
+.input-color-todo{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -359,29 +365,12 @@ textarea{
 }
 
 /*************** M O D O   O S C U R O *********************/
-/* .navegador{
-    background-color: #ffb245;
-    color: #323232;
-}
-
-.fondoMain{
-    background-color: #fff;
-}
-
-.fondoAside{
-    background-color: #999999;
-}
-
-.m-claro{
-    background-color: #fff;
-    color: aqua;
-} */
 
 .dark .encabezado{
     background-color: #c0e2dd;
     color: #000080
 } 
-/* solucionar aca*/
+
 .dark #fondo-home{
     background-color: #4ab3cd;
 }
@@ -402,13 +391,48 @@ textarea{
 
 .dark .iclaro {
     background-color: #fff;
+    color: #000080;
 }
 
-.dark .itipografia, .itamanioletra{
-    background-color: #fff;
-    color: #03989e;
+.dark  .selector-color-meme{
+    background-color: #ffffff;
+    color: #000080;
 }
+
+.dark .s-color{
+    background-color: #ffffff;
+    color: #000080;
+} 
 
 .dark label{
     color: #000080;
 }
+
+.dark .url{
+    color: #000080;
+}
+
+.dark .reestablecer-filtros{
+    background-color: #ffffff;
+    color: #000080;
+}
+
+.dark .reestablecer-filtros:hover{
+    background-color: #a5d6e4;
+}
+
+.dark  .texto-checkbox{
+    color: #000080;
+}
+
+.dark .itamanioletra{
+    background-color: #ffffff;
+    color: #000080;
+}
+
+.dark .i-color-texto{
+    background-color: #ffffff;
+    color: #000080;
+} 
+
+

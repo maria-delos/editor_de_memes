@@ -8,7 +8,7 @@
         <script src="https://kit.fontawesome.com/c73c05876f.js" crossorigin="anonymous"></script>
 
     </head>
-    <body class="dark">
+    <body>
         
 
     <!--  Aca esta el encabezado -->    
@@ -25,25 +25,26 @@
             Texto</a>
         <a href="#" id="btn-modo-oscuro" class="btn-nav ">
             <i class="fa-regular fa-lightbulb"></i> 
-            Modo oscuro</a>
+            Modo Claro</a>
         </div>
         </div>
     </header>
 
-    <!--**********************      M E M E *************************** --> 
+    <!--**********************   M E M E   *************************** --> 
     <main id="fondo-home" class="fondohome">
         <div class="box">
         <div class="padre">
             
-                <div id="top-text">
-                    <p></p>
+                
+                <p id="top-texto" class="texto-top">TOP TEXT</p>
+                
+                <div id="cont-imagen" class="contenedor-meme">
+                    <!-- <img> -->
+                      
                 </div>
-                <div id="cont-imagen">
-                    <img src="" alt="">
-                </div>
-                <div id="bottom-text">
-                    <p></p>
-                </div>
+                
+                <p id="bottom-text" class="text-bottom">BOTTOM TEXT</p>
+                
             
         </div>
         </div>
@@ -57,16 +58,16 @@
         <div class="formulario-imagen">
             
                 <label for="url">URL</label><br>
-                <input type="text" id="url" name="url" class="iclaro">
+                <input type="text" id="url" name="url" class=" url iclaro">
                 <label for="fondo" >FONDO</label><br>
                 <div class="alinear-inputs">
                 
-             <div  id="input-color-meme">
+             <div  id="input-color-meme" class="input-color-meme">
                     <div class="selector-color-meme">
-                    <input type="color" class="color-texto iclaro" value="#FFFFFF" aria-label="color del texto">
+                    <input type="color" class="color-texto" value="#FFFFFF" aria-label="color del texto">
                     <span class="texto-color">#FFFFFF</span>
                     </div>
-                    <select name="opcion-color" id="opcion-color" class="selector-color-meme iclaro">
+                    <select name="opcion-color" id="opcion-color" class="selector-color-meme s-color">
                     <option value="ninguno">Ninguno</option>
                     <option value="aclarar">Aclarar</option>
                     <option value="oscurecer">Oscurecer</option>
@@ -120,11 +121,11 @@
                      <label for="text-superior" class="text-superior">SUPERIOR</label>
                      <textarea name="text-superior" id="text-superior" class="iclaro" cols="25" rows="1">TOP TEXT</textarea><br>
 
-                     <input type="checkbox" name="" id="" class="checkbox"> Sin texto superior <br>
+                     <input type="checkbox" name="checkbox" id="" class="checkbox"> <span class="texto-checkbox"> Sin texto superior</span><br>
 
                      <label for="text-inferior">INFERIOR</label>
                      <textarea name="text-inferior" id="text-inferior" class="iclaro" cols="25" rows="1">BOTTOM TEXT</textarea><br>
-                     <input type="checkbox" name="" id="" class="checkbox"> Sin texto inferior <br>
+                     <input type="checkbox" name="" id="checkbox" class="checkbox"><span class="texto-checkbox"> Sin texto inferior</span><br>
 
                      <label for="fuente">FUENTE</label> <br>   
                      <select name="fuente" class="itipografia iclaro" id="fuente" >
@@ -146,23 +147,23 @@
                         <button class="btn-text iclaro"><i class="fa-solid fa-align-right"></i></button>  
                         </div>
                         
-                        <div id="input-color-todo">
+                        <div id="input-color-todo" class="input-color-todo">
                             <div  id="input-color-fondo">  
                                 <label for="" id="label-color">COLOR</label> 
-                                    <div class="selector-color">
+                                    <div class="selector-color i-color-texto">
                                     <input type="color" class="color-texto" value="#000000" aria-label="color del texto">
                                     <span class="texto-color">#000000</span>
                                     </div>
                             </div>
                             <div  id="input-color-fondo">  
                                 <label for="" id="label-color">FONDO</label> 
-                                <div class="selector-color">
+                                <div class="selector-color i-color-texto">
                                 <input type="color" class="color-texto" value="#FFFFFF" aria-label="color del fondo">
                                 <span class="texto-color">#FFFFFF</span>
                                 </div>
                                 </div>
                         </div>
-                    <input type="checkbox" name="" id="" class="checkbox"> Fondo transparente <br>
+                    <input type="checkbox" name="" id="" class="checkbox"><span class="texto-checkbox"> Fondo transparente</span><br>
                     <label for="">CONTORNO</label>
                     
                     <div class="btns-contorno">
