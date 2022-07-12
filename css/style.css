@@ -81,6 +81,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     text-align: center;
+    
 }
 
 .contenedor-meme{
@@ -89,7 +90,12 @@
     height: 70%;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    align-items: center;
+    overflow: hidden; 
+    /* background-image: ; */
+    background-position: center;
+    background-size: cover;
+    
 }
 
 
