@@ -6,12 +6,23 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* @font-face {
+    font-family: comic;
+    src: url(comic.ttf);
+} */
+
+/* .padre p {
+    border: 2px solid red;
+    text-align: left;
+} */
+
 .encabezado{
     background-color: #323232;
     color: white;
     padding: 0.9375em;
     text-align: center;
     width: 85%;
+    
 }
 
 #encabezado{
@@ -70,9 +81,9 @@
     align-items: center;
 }
 
-.box{
+/* .box{
     margin-top: 1%;
-}
+} */
 
 .texto-top , .text-bottom{
     background-color: #ffffff;
@@ -81,7 +92,11 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     text-align: center;
-    
+}
+
+.text-container{
+    display: flex;
+    width: 100%;
 }
 
 .contenedor-meme{
@@ -220,7 +235,6 @@ input[type="range"] {       /*  cambiando el range */
 }
 
 
-
 /* /////////////// A S I D E   t e x t o   /////////////////*/
 
 .div-texto{
@@ -275,6 +289,7 @@ textarea{
     border: none;
     margin-inline: 1%;
     padding: 3%;
+    cursor: pointer;
 } 
                     /* circulito estilo seleccion de color*/
 .color-texto {
@@ -282,6 +297,7 @@ textarea{
     width: 26%;
     background-color: transparent;
     border: none;
+    cursor: pointer;
     
 }
 .color-texto::-webkit-color-swatch{
@@ -360,6 +376,7 @@ textarea{
     font-size: 1em;
     margin-top: 5%;
     margin-bottom: 8%;
+    font-family: ameri;
 }
 
 .ocultar{
@@ -369,6 +386,10 @@ textarea{
 .mostrar{
     display: block;
 }
+
+/* .fondoTransparente{
+    background-color: transparent;
+} */
 
 /*************** M O D O   O S C U R O *********************/
 

@@ -31,26 +31,22 @@
     </header>
 
     <!--**********************   M E M E   *************************** --> 
+
     <main id="fondo-home" class="fondohome">
-        <div class="box">
+        
         <div class="padre">
-            
-                
+            <div id="topBox" class="text-container">
                 <p id="top-texto" class="texto-top">TOP TEXT</p>
-                
-                <div id="cont-imagen" class="contenedor-meme">
-                    <!-- <img> -->
-                      
-                </div>
-                
+            </div>
+            <div id="cont-imagen" class="contenedor-meme"></div>
+            <div id="bottomBox" class="text-container">
                 <p id="bottom-text" class="text-bottom">BOTTOM TEXT</p>
-                
-            
+            </div>
         </div>
-        </div>
+        
     
 
-    <!--  Aca esta el  A S I D E  imagen  --------------------------------------> 
+    <!-----------------  Aca esta el  A S I D E  imagen  -------------------------> 
     <aside>
         <div  class="div-imagen">
        <p class="title-form">IMAGEN</p>
@@ -64,8 +60,8 @@
                 
              <div  id="input-color-meme" class="input-color-meme">
                     <div class="selector-color-meme">
-                    <input type="color" id="color-fondo" class="color-texto" value="#FFFFFF" aria-label="color del texto">
-                    <span class="texto-color" id="codigo-color">#FFFFFF</span>
+                    <input type="color" id="color-fondo" class="color-texto" value="#FFFFFF" aria-label="color del fondo">
+                    <span class="texto-color"  id="codigo-color">#FFFFFF</span>
                     </div>
                     <select name="opcion-color" id="opcion-color" class="selector-color-meme s-color">
                     <option value="ninguno">Ninguno</option>
@@ -81,24 +77,24 @@
        <!----------- filtros a aplicar al meme ----------------->
                 <label for="">FILTROS</label><br>
                 <div class="all-filter">
-                <label for="brillo">BRILLO</label><br>
-                <input type="range" id="brillo" name="brillo" min="0" max="1" step="0.1" value="1" class="slider iclaro" aria-level="filtro brillo"><br>
-                <label for="opacidad">OPACIDAD</label>
-                <input type="range" id="opacidad" name="opacidad" min="0" max="1" step="0.1" value="1" class="slider iclaro" aria-level="filtro opacidad"><br>
-                <label for="contraste">CONTRASTE</label>
-                <input type="range" id="contraste" name="contraste" min="100" max="1000" step="1" value="100" class="slider iclaro" aria-level="filtro contraste"><br>
-                <label for="desenfoque">DESENFOQUE</label>
-                <input type="range" id="desenfoque" name="desenfoque" min="0" max="10" step="0.1" value="0" class="slider iclaro" aria-level="filtro desenfoque"><br>
-                <label for="grises">ESCALA DE GRISES</label>
-                <input type="range" id="grises" name="grises" min="0" max="100" step="1" value="0" class="slider iclaro" aria-level="filtro escala de grises"><br>
-                <label for="sepia">SEPIA</label><br>
-                <input type="range" id="sepia" name="sepia" min="0" max="100" step="1" value="0" class="slider iclaro" aria-level="filtro sepia"><br>
-                <label for="hue">HUE</label><br>
-                <input type="range" id="hue" name="hue" min="0" max="359" step="1" value="0" class="slider iclaro" aria-level="filtro hue">
-                <label for="saturado">SATURADO</label>
-                <input type="range" id="saturado" name="saturado" min="100" max="1000" step="10" value="100" class="slider iclaro" aria-level="filtro saturacion">
-                <label for="negativo">NEGATIVO</label>
-                <input type="range" id="negativo" name="negativo" min="0" max="1" step="0.1" value="1" class="slider iclaro" aria-level="filtro negativo">
+                    <label for="brillo">BRILLO</label><br>
+                    <input type="range" id="brillo" name="brillo" min="0" max="1" step="0.1" value="1" class="slider iclaro" aria-level="filtro brillo"><br>
+                    <label for="opacidad">OPACIDAD</label>
+                    <input type="range" id="opacidad" name="opacidad" min="0" max="1" step="0.1" value="1" class="slider iclaro" aria-level="filtro opacidad"><br>
+                    <label for="contraste">CONTRASTE</label>
+                    <input type="range" id="contraste" name="contraste" min="100" max="1000" step="1" value="100" class="slider iclaro" aria-level="filtro contraste"><br>
+                    <label for="desenfoque">DESENFOQUE</label>
+                    <input type="range" id="desenfoque" name="desenfoque" min="0" max="10" step="0.1" value="0" class="slider iclaro" aria-level="filtro desenfoque"><br>
+                    <label for="grises">ESCALA DE GRISES</label>
+                    <input type="range" id="grises" name="grises" min="0" max="100" step="1" value="0" class="slider iclaro" aria-level="filtro escala de grises"><br>
+                    <label for="sepia">SEPIA</label><br>
+                    <input type="range" id="sepia" name="sepia" min="0" max="100" step="1" value="0" class="slider iclaro" aria-level="filtro sepia"><br>
+                    <label for="hue">HUE</label><br>
+                    <input type="range" id="hue" name="hue" min="0" max="359" step="1" value="0" class="slider iclaro" aria-level="filtro hue">
+                    <label for="saturado">SATURADO</label>
+                    <input type="range" id="saturado" name="saturado" min="100" max="1000" step="10" value="100" class="slider iclaro" aria-level="filtro saturacion">
+                    <label for="negativo">NEGATIVO</label>
+                    <input type="range" id="negativo" name="negativo" min="0" max="1" step="0.1" value="1" class="slider iclaro" aria-level="filtro negativo">
                 </div>    
                 <button id="reestablecer-filtros" class="reestablecer-filtros">Reestablecer filtros</button>
             
@@ -113,51 +109,50 @@
      
              <div class="formulario-imagen">
                      <label for="text-superior" class="text-superior">SUPERIOR</label>
-                     <textarea name="text-superior" id="text-superior" class="iclaro" cols="25" rows="1">TOP TEXT</textarea><br>
-
-                     <input type="checkbox" name="checkbox" id="" class="checkbox"> <span class="texto-checkbox"> Sin texto superior</span><br>
+                     <textarea name="text-superior" id="text-superior" class="iclaro" cols="25" rows="1" placeholder="TOP TEXT"></textarea><br>
+                     <input type="checkbox" name="checkbox" id="checkbox-superior" class="checkbox"> <span class="texto-checkbox"> Sin texto superior</span><br>
 
                      <label for="text-inferior">INFERIOR</label>
-                     <textarea name="text-inferior" id="text-inferior" class="iclaro" cols="25" rows="1">BOTTOM TEXT</textarea><br>
-                     <input type="checkbox" name="" id="checkbox" class="checkbox"><span class="texto-checkbox"> Sin texto inferior</span><br>
+                     <textarea name="text-inferior" id="text-inferior" class="iclaro" cols="25" rows="1" placeholder="BOTTOM TEXT"></textarea><br>
+                     <input type="checkbox" name="" id="checkbox-inferior" class="checkbox"><span class="texto-checkbox"> Sin texto inferior</span><br>
 
                      <label for="fuente">FUENTE</label> <br>   
                      <select name="fuente" class="itipografia iclaro" id="fuente" >
-                        <option value="impact" class="iclaro">Impact</option>
-                        <option value="arial" class="iclaro">Arial</option>
-                        <option value="arial-black" class="iclaro">Arial Black</option>
-                        <option value="american-typewriter" class="iclaro">American Typewriter</option>
-                        <option value="andale-mono" class="iclaro">Andale Mono</option>
-                        <option value="comic-sans" class="iclaro">Comic Sans MS</option>
-                        <option value="helvetica" class="iclaro">Helvetica</option>
-                        <option value="impact" class="iclaro">Impact</option>
-                        <option value="verdana" class="iclaro">Verdana</option>
-                        <option value="times" class="iclaro">Times New Roman</option>
+                        <option value="Impact" class="iclaro">Impact</option>
+                        <option value="Arial" class="iclaro">Arial</option>
+                        <option value="arial black" class="iclaro">Arial Black</option>
+                        <option value="american typewriter" class="iclaro">American Typewriter</option>
+                        <option value="andale mono" class="iclaro">Andale Mono</option>
+                        <option value="comic sans" class="iclaro">Comic Sans MS</option>
+                        <option value="Helvetica" class="iclaro">Helvetica</option>
+                        <option value="Impact" class="iclaro">Impact</option>
+                        <option value="Verdana" class="iclaro">Verdana</option>
+                        <option value="Times New Roman" class="iclaro">Times New Roman</option>
                     </select>
                         <div>
-                        <input type="number" class="itamanioletra" id="size-letra" name="size-letra"min="12" max="300">
-                        <button class="btn-text iclaro"><i class="fa-solid fa-align-left"></i></button>
-                        <button class="btn-text iclaro"><i class="fa-solid fa-align-center"></i></button>
-                        <button class="btn-text iclaro"><i class="fa-solid fa-align-right"></i></button>  
+                        <input type="number" class="itamanioletra" id="size-letra" name="size-letra" min="12" max="100">
+                        <button id="btn-izquierda" class="btn-text iclaro"><i class="fa-solid fa-align-left"></i></button>
+                        <button id="btn-centro" class="btn-text iclaro"><i class="fa-solid fa-align-center"></i></button>
+                        <button id="btn-derecha" class="btn-text iclaro"><i class="fa-solid fa-align-right"></i></button>  
                         </div>
                         
                         <div id="input-color-todo" class="input-color-todo">
                             <div  id="input-color-fondo">  
                                 <label for="" id="label-color">COLOR</label> 
                                     <div class="selector-color i-color-texto">
-                                    <input type="color" class="color-texto" value="#000000" aria-label="color del texto">
-                                    <span class="texto-color">#000000</span>
+                                    <input type="color" class="color-texto" id="icolorTexto" value="#000000" aria-label="color del texto">
+                                    <span class="texto-color" id="span-color-texto">#000000</span>
                                     </div>
                             </div>
                             <div  id="input-color-fondo">  
                                 <label for="" id="label-color">FONDO</label> 
                                 <div class="selector-color i-color-texto">
-                                <input type="color" class="color-texto" value="#FFFFFF" aria-label="color del fondo">
-                                <span class="texto-color">#FFFFFF</span>
+                                <input type="color" class="color-texto colorFondo" id="icolorFondoTexto" value="#FFFFFF" aria-label="color del fondo">
+                                <span class="texto-color" id="span-color-fondo">#FFFFFF</span>
                                 </div>
                                 </div>
                         </div>
-                    <input type="checkbox" name="" id="" class="checkbox"><span class="texto-checkbox"> Fondo transparente</span><br>
+                    <input type="checkbox" name="" id="fondo-transparente" class="checkbox"><span class="texto-checkbox"> Fondo transparente</span><br>
                     <label for="">CONTORNO</label>
                     
                     <div class="btns-contorno">
@@ -180,6 +175,30 @@
             </div>
                  </form>
          </div>
+
+         <!-- <div class="all-filter">
+            <label for="brillo">BRILLO</label><br>
+            <input type="range" id="brillo" name="brillo" min="0" max="1" step="0.1" value="1" class="slider iclaro" aria-level="filtro brillo"><br>
+            <label for="opacidad">OPACIDAD</label>
+            <input type="range" id="opacidad" name="opacidad" min="0" max="1" step="0.1" value="1" class="slider iclaro" aria-level="filtro opacidad"><br>
+            <label for="contraste">CONTRASTE</label>
+            <input type="range" id="contraste" name="contraste" min="100" max="1000" step="1" value="100" class="slider iclaro" aria-level="filtro contraste"><br>
+            <label for="desenfoque">DESENFOQUE</label>
+            <input type="range" id="desenfoque" name="desenfoque" min="0" max="10" step="0.1" value="0" class="slider iclaro" aria-level="filtro desenfoque"><br>
+            <label for="grises">ESCALA DE GRISES</label>
+            <input type="range" id="grises" name="grises" min="0" max="100" step="1" value="0" class="slider iclaro" aria-level="filtro escala de grises"><br>
+            <label for="sepia">SEPIA</label><br>
+            <input type="range" id="sepia" name="sepia" min="0" max="100" step="1" value="0" class="slider iclaro" aria-level="filtro sepia"><br>
+            <label for="hue">HUE</label><br>
+            <input type="range" id="hue" name="hue" min="0" max="359" step="1" value="0" class="slider iclaro" aria-level="filtro hue">
+            <label for="saturado">SATURADO</label>
+            <input type="range" id="saturado" name="saturado" min="100" max="1000" step="10" value="100" class="slider iclaro" aria-level="filtro saturacion">
+            <label for="negativo">NEGATIVO</label>
+            <input type="range" id="negativo" name="negativo" min="0" max="1" step="0.1" value="1" class="slider iclaro" aria-level="filtro negativo">
+            </div>  -->
+
+
+
     </aside> 
 
     </main>
