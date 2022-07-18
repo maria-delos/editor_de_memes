@@ -87,7 +87,7 @@
 
 .texto-top , .text-bottom{
     background-color: #ffffff;
-    padding: 6%;
+    padding: 3%;
     width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
@@ -352,6 +352,7 @@ textarea{
     margin-top: 5%;
     width: 32%;
     margin-bottom: 8%;
+    cursor: pointer;
 }
 
 .input-espaciado{

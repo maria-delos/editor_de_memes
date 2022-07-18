@@ -60,7 +60,7 @@ colorFondoMeme.addEventListener('input', (event)=>{
     codigoColor.innerHTML = `${valorColor}`
 })
 
-// modo de fusion
+///// modo de fusion
 
 modoFusion.addEventListener('input', (event)=>{
     let valorModoFusion = event.target.value
@@ -69,55 +69,53 @@ modoFusion.addEventListener('input', (event)=>{
 
 /////////////////// F I L T R O S  /////////////////////
 
-// const iBrillo = document.querySelector('#brillo')
-// const iOpacidad = document.querySelector('#opacidad')
-// const iContraste = document.querySelector('#contraste')
-// const iDesenfoque = document.querySelector('#desenfoque')
-// const iEscalaGrises = document.querySelector('#grises')
-// const iSepia = document.querySelector('#sepia')
-// const iHue = document.querySelector('#hue')
-// const iSaturado = document.querySelector('#saturado')
-// const iNegativo = document.querySelector('#negativo')
+const iBrillo = document.querySelector('#brillo')
+const iOpacidad = document.querySelector('#opacidad')
+const iContraste = document.querySelector('#contraste')
+const iDesenfoque = document.querySelector('#desenfoque')
+const iEscalaGrises = document.querySelector('#grises')
+const iSepia = document.querySelector('#sepia')
+const iHue = document.querySelector('#hue')
+const iSaturado = document.querySelector('#saturado')
+const iNegativo = document.querySelector('#negativo')
 
 
-//                    // arreglar esto
-// const filtros = (e) =>{
-//     img.style.filter = `brightness(${iBrillo.value})
-//     opacity(${iOpacidad.value})
-//     contrast(${iContraste.value}%)
-//     blur(${iDesenfoque.value}px)
-//     grayscale(${iEscalaGrises.value}%)
-//     sepia(${iSepia.value}%)
-//     hue-rotate(${iHue.value}deg)
-//     saturation(${iSaturado.value}%)
-//     invert(${iNegativo.value})`
-//     //console.log(iBrillo.value)
-// }
+const filtros = () =>{
+    img.style.filter = `brightness(${iBrillo.value})
+    opacity(${iOpacidad.value})
+    contrast(${iContraste.value}%)
+    blur(${iDesenfoque.value}px)
+    grayscale(${iEscalaGrises.value}%)
+    sepia(${iSepia.value}%)
+    hue-rotate(${iHue.value}deg)
+    saturate(${iSaturado.value}%)
+    invert(${iNegativo.value})`
+}
 
-// iBrillo.addEventListener('input', filtros)
-// iOpacidad .addEventListener('input', filtros)
-// iContraste.addEventListener('input', filtros)
-// iDesenfoque.addEventListener('input', filtros)
-// iEscalaGrises.addEventListener('input', filtros)
-// iSepia.addEventListener('input', filtros)
-// iHue.addEventListener('input', filtros)
-// iSaturado.addEventListener('input', filtros)
-// iNegativo.addEventListener('input', filtros)
+iBrillo.addEventListener('input', filtros)
+iOpacidad .addEventListener('input', filtros)
+iContraste.addEventListener('input', filtros)
+iDesenfoque.addEventListener('input', filtros)
+iEscalaGrises.addEventListener('input', filtros)
+iSepia.addEventListener('input', filtros)
+iHue.addEventListener('input', filtros)
+iSaturado.addEventListener('input', filtros)
+iNegativo.addEventListener('input', filtros)
 
 // probando filtros de otra manera ------------------
 
-const iBrillo = document.querySelector('#brillo')
-const iOpacidad = document.querySelector('#opacidad')
+// const iBrillo = document.querySelector('#brillo')
+// const iOpacidad = document.querySelector('#opacidad')
 
-iBrillo.addEventListener('input', (e)=> {
-    let valorFiltro = e.target.value
-    img.style.filter = `brightness(${valorFiltro})`
-})
+// iBrillo.addEventListener('input', (e)=> {
+//     let valorFiltro = e.target.value
+//     img.style.filter = `brightness(${valorFiltro})`
+// })
 
-iOpacidad.addEventListener('input', (e)=> {
-    let valorFiltro = e.target.value
-    img.style.filter = `opacity(${valorFiltro})`
-})
+// iOpacidad.addEventListener('input', (e)=> {
+//     let valorFiltro = e.target.value
+//     img.style.filter = `opacity(${valorFiltro})`
+// })
 
 /////////////////////////////////////////////////////////////////
 
@@ -215,7 +213,6 @@ checkboxFondoTransparente.addEventListener('input', ()=>{
     }
 })
 
-
 ///////////////// COLOR DEL TEXTO Y COLOR DEL FONDO DEL TEXTO ///////////////
 
 colorTextoMeme.addEventListener('input', (event)=>{
@@ -227,7 +224,6 @@ colorTextoMeme.addEventListener('input', (event)=>{
 })
 
 cambioColorFondoTexto =(event)=>{
-
     const spanColorfondo = document.querySelector('#span-color-fondo')
     let color = event.target.value
     spanColorfondo.innerHTML = color
@@ -236,6 +232,49 @@ cambioColorFondoTexto =(event)=>{
 }
 
 colorFondoTexto.addEventListener('input', cambioColorFondoTexto)
+
+////////////////////////    C O N T O R N O     ////////////////////////
+
+const btnNinguno = document.querySelector('#btn-ninguno')
+const btnClaro = document.querySelector('#btn-claro')
+const btnOscuro = document.querySelector('#btn-oscuro')
+
+const noContorno =()=>{
+    topTextBox.style.textShadow = 'none'
+    bottomText.style.textShadow = 'none'
+}
+
+btnNinguno.addEventListener('click', noContorno)
+
+const contornoClaro =()=>{
+    topTextBox.style.textShadow = '2px 2px #ffffff'
+    bottomText.style.textShadow = '2px 2px #ffffff'
+}
+
+btnClaro.addEventListener('click', contornoClaro)
+
+const contornoOscuro =()=>{
+    topTextBox.style.textShadow = '2px 2px #000000'
+    bottomText.style.textShadow = '2px 2px #000000'
+}
+
+btnOscuro.addEventListener('click', contornoOscuro)
+
+////////////////////////    E S P A C I A D O     ////////////////////////
+
+
+
+
+
+////////////////////////    I N T E R L I N E A D O     ////////////////////////
+
+const interlineado = document.querySelector('#input-interlineado')
+
+interlineado.addEventListener('input', ()=>{
+    const valorinterlineado = interlineado.value
+    topTextBox.style.lineHeight = valorinterlineado
+    bottomText.style.lineHeight = valorinterlineado
+})
 
 
 
