@@ -6,15 +6,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* @font-face {
-    font-family: comic;
-    src: url(comic.ttf);
-} */
-
-/* .padre p {
-    border: 2px solid red;
-    text-align: left;
-} */
 
 .encabezado{
     background-color: #323232;
@@ -39,7 +30,7 @@
 }
 
 .btn-nav{
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     background-color: #424549;
     border-radius: 3px;
@@ -55,35 +46,54 @@
 
 #fondo-home{
     border: 1px solid #424549;   
- /*   margin-top: 0em;   */
     background-color: #424549;
     width: 85%;
-    height: 84.2vh; 
-
- /*   height: 100%; */
-   /* top: 0%;  */
-    
+    height: 84.2vh;   
 }
 
 
 
 /* /////////////// C O N T E N E D O R    M E M E  /////////////////*/
 
+
 .padre{
     width: 40%;
- /*   margin: 1% auto; */
-    /*margin: auto; */
     margin-top: 1%; 
     margin-left: 37%; 
     height: 450px;   
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+     flex-direction: column;
+    background-color: #000000;
+    position: relative;  
 }
 
-/* .box{
-    margin-top: 1%;
-} */
+.contenedor-meme{
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background-position: center;
+    background-size: cover; 
+    overflow: hidden;
+    
+}
+.posicionTextotop{
+    position: absolute; 
+    z-index: 2;
+} 
+
+.posicionTextobottom{
+    z-index: 1;
+    position: absolute;
+    top: 371px; 
+} 
+
+.agrandarMeme{
+    height: 450px;
+    flex-grow: 1;
+} 
+
 
 .texto-top , .text-bottom{
     background-color: #ffffff;
@@ -97,20 +107,24 @@
 .text-container{
     display: flex;
     width: 100%;
+
 }
 
-.contenedor-meme{
-    background-color: black;
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-    /* background-image: ; */
-    background-position: center;
-    background-size: cover;
-    
+.descargar-meme{
+    margin-top: 20px;
+    margin-left: 51%;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #16a624;
+    border-radius: 3px;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 0.67em;
+    text-align: center;
+    cursor: pointer;
+}
+.descargar-meme:hover{
+    background-color: #7dbd2a;
 }
 
 
@@ -127,7 +141,6 @@ aside{
 }
 
 .title-form{
- /*   margin-top: 15%; */
     margin: 15% 33% 10% 33%;
     font-weight: bold;
     font-size: 0.85em;
@@ -190,7 +203,7 @@ input[type="range"] {       /*  cambiando el range */
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: row;
-    /* border: 1px solid yellow;    */
+    /* border: 1px solid blue;     */
     width: 100%;
     align-content: space-between;
 }
@@ -203,7 +216,7 @@ input[type="range"] {       /*  cambiando el range */
     border: none;
     border-radius: 3px;
     color: #fff;
-    /* border: 1px solid magenta;  */
+    /* border: 1px solid magenta;   */
     margin-right: 0%;
 } 
 
@@ -245,7 +258,6 @@ input[type="range"] {       /*  cambiando el range */
     width: 0.625em;
     margin-bottom: 8%;
     border: none;
-
 }
 
 textarea{
@@ -294,19 +306,21 @@ textarea{
                     /* circulito estilo seleccion de color*/
 .color-texto {
     appearance: none;
-    width: 26%;
+    width: 30%; 
     background-color: transparent;
     border: none;
     cursor: pointer;
-    
 }
+
 .color-texto::-webkit-color-swatch{
     border-radius: 50%;
     border: none;
+    width: 20px;
+    height: 20px;
 }
 
 .texto-color{           /* texto dentro de color*/
-    font-size: 1.1em;   
+    font-size: 1.1em;  
 }
 
 #label-color{
@@ -388,9 +402,9 @@ textarea{
     display: block;
 }
 
-/* .fondoTransparente{
+.fondoTransparente{
     background-color: transparent;
-} */
+}
 
 /*************** M O D O   O S C U R O *********************/
 
@@ -462,5 +476,34 @@ textarea{
     background-color: #ffffff;
     color: #000080;
 } 
+
+
+/*///////////////   M E D I A    Q U E R Y   //////////////////////////////*/
+
+
+@media  (max-width: 1300px){
+    .color-texto::-webkit-color-swatch{
+        width: 15px;
+        height: 15px;
+    }
+
+    .texto-color{          
+        font-size: 1em;   
+    }
+
+    aside{
+        width: 19%;
+        height: 100vh;
+    }
+
+    .padre{
+        width: 50%;
+        margin-top: 1%; 
+        margin-left: 37%; 
+        height: 500px;   
+
+    }
+
+}
 
 

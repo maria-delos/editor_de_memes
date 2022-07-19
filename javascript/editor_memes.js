@@ -102,20 +102,34 @@ iHue.addEventListener('input', filtros)
 iSaturado.addEventListener('input', filtros)
 iNegativo.addEventListener('input', filtros)
 
-// probando filtros de otra manera ------------------
+/////////////////// REESTABLECER FILTROS  /////////////////////
 
-// const iBrillo = document.querySelector('#brillo')
-// const iOpacidad = document.querySelector('#opacidad')
+const btnReestablecerFiltros = document.querySelector('#reestablecer-filtros')
 
-// iBrillo.addEventListener('input', (e)=> {
-//     let valorFiltro = e.target.value
-//     img.style.filter = `brightness(${valorFiltro})`
-// })
+const reestablecerFiltros = (e)=>{
+    e.preventDefault()   
+    img.style.filter = `brightness(1)
+     opacity(1)
+     contrast(100%)
+     blur(0px)
+     grayscale(0%)
+     sepia(0%)
+     hue-rotate(0)
+     saturate(100%)
+     invert(0)`
+     iBrillo.value = 1
+     iOpacidad.value = 1
+     iContraste.value = 100
+     iDesenfoque.value = 0
+     iEscalaGrises.value = 0
+     iSepia.value = 0
+     iHue.value = 0
+     iSaturado.value = 100
+     iNegativo.value = 0
+}
 
-// iOpacidad.addEventListener('input', (e)=> {
-//     let valorFiltro = e.target.value
-//     img.style.filter = `opacity(${valorFiltro})`
-// })
+btnReestablecerFiltros.addEventListener('click', reestablecerFiltros)
+
 
 /////////////////////////////////////////////////////////////////
 
@@ -197,21 +211,43 @@ botonAlineadoDerecha.addEventListener('click', ()=>{
 ////////////  CHECKBOX FONDO TRANSPARENTE
 const colorTextoMeme = document.querySelector('#icolorTexto')
 const colorFondoTexto = document.querySelector('#icolorFondoTexto')
+const contenedorPadre = document.querySelector('#padre')
 
 const checkboxFondoTransparente = document.querySelector('#fondo-transparente')
 
 checkboxFondoTransparente.addEventListener('input', ()=>{ 
-   // topTextBox.classList.toggle('fondoTransparente')
-    //bottomText.classList.toggle('fondoTransparente')
+//     topTextBox.classList.toggle('fondoTransparente')
+//     bottomText.classList.toggle('fondoTransparente')
+//    // img.classList.toggle('agrandarMeme')
+//     img.style.border = `2px solid red`
+//     padre.style.border = `2px solid blue`
+//     topTextBox.classList.toggle('posicionTextotop')
+//     bottomText.classList.toggle('posicionTextobottom')
 
+//     const agrandar =()=> {
+//      return img.style.height = `450px`
+//     } 
+//     agrandar()
+//
+                           //-------
     if (checkboxFondoTransparente.checked){
+        img.classList.toggle('agrandarMeme')
         topTextBox.style.backgroundColor = 'transparent'
         bottomText.style.backgroundColor = 'transparent'
+        topTextBox.classList.toggle('posicionTextotop')
+        bottomText.classList.toggle('posicionTextobottom')
+        
+        //img.style.border = `2px solid red`
+        //padre.style.border = `2px solid red`
+       
+        
     } else {
         topTextBox.style.backgroundColor = colorFondoTexto.value
         bottomText.style.backgroundColor = colorFondoTexto.value
     }
-})
+
+})   
+
 
 ///////////////// COLOR DEL TEXTO Y COLOR DEL FONDO DEL TEXTO ///////////////
 
@@ -262,9 +298,12 @@ btnOscuro.addEventListener('click', contornoOscuro)
 
 ////////////////////////    E S P A C I A D O     ////////////////////////
 
+const espaciado = document.querySelector('#input-espaciado')
 
-
-
+espaciado.addEventListener('input',(e)=>{
+    topTextBox.style.padding = `${e.target.value}px`
+    bottomText.style.padding = `${e.target.value}px`
+})
 
 ////////////////////////    I N T E R L I N E A D O     ////////////////////////
 
@@ -275,6 +314,30 @@ interlineado.addEventListener('input', ()=>{
     topTextBox.style.lineHeight = valorinterlineado
     bottomText.style.lineHeight = valorinterlineado
 })
+
+
+////////////////////////  D E S C A R G A   I M G    ////////////////////////
+
+const btnDescarga = document.getElementById("btn-descarga");
+
+btnDescarga.addEventListener("click", () =>
+  domtoimage
+    .toBlob(document.getElementById("padre"))
+    .then((blob) => saveAs(blob, "mi-meme.png"))
+);
+
+// no me funciono bien, solo se descarga una pequeña porcion de la imagen
+
+
+
+
+
+
+
+
+
+
+
 
 
 
